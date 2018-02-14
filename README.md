@@ -10,7 +10,7 @@ However when it comes to Symetrical NAT it's a different story; In this situatio
 
 In this specification I propose a new protocol RAWR (Router assisting with relaying), for this protocol there are three guiding principles:
 
-- It should be based on inbound connections
+- It should be based on outbound connections
 - It shouldn't require punching holes or insecure protcols (like uPnP)
 - It should be flexible to deploy on legacy routers
 - It should be able to fallback if it can't do a full traversal
@@ -43,7 +43,7 @@ to long round trips. (The Root RAWR server by default will only ever do this)
 
 # Advantages
 
-Each RAWR request is etablished by pairing up two inbound connections that want to talk to each other via their MAC address, therfore there is no outbound connection resulting in no need for hole punching.
+Each RAWR request is etablished by pairing up two outbound connections that want to talk to each other via their MAC address, therfore there is no outbound connection resulting in no need for hole punching.
 
 Each node can configure a custom gateway meaning even networks with routers that don't support this yet can install a
 server somewhere in the network to act as a hop. As more servers get added to more subnets the connections will get more

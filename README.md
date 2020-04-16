@@ -14,7 +14,9 @@ For this protocol we have the following five principles:
 
 # Documentation
 
-- [Bacckground](docs/background.md) - A background on why Project Laya was developed and the state of peer-to-peer communication
+- [Background](docs/background.md) - A background on why Project Laya was developed and the state of peer-to-peer communication today
+- [Design](docs/design.md) - The design and overview of how Project Laya works
+- Specification - TBC
 
 # Roadmap
 

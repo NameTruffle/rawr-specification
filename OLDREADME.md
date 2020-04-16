@@ -1,12 +1,3 @@
-# RAWR Specification
-
-WebRTC is a real time communication protocol for establishing a direct connection between nodes on a network ("peers"),
-In order to connect these peers it uses a signalling server to exchange details and ICE servers to establish each connection.
-
-In most cases WebRTC can use a STUN server to retrieve the public IP address and port of each peer to establish a direct connection or connect them directly if they are on the same subnet.
-
-However when it comes to Symetrical NAT it's a different story; In this situation the port for each peer changes on each connection and only accepts an inbound connection from a destination and port of the outbound connection it was created for. This forces WebRTC to use a TURN server inorder to relay the data through a 3rd party to each peer, since they cannot connect to each other directly.
-
 # Overview
 
 As a TURN server is also a STUN server, a RAWR server is also a TURN server. So how does it work? Well the idea of this protocol is to utilize the existing network.

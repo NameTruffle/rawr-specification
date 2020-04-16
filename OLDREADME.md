@@ -1,5 +1,4 @@
 # RAWR Specification
-An alternative to STUN and TURN ICE protocols for Web RTC which works with traversing symmetrical NAT.
 
 WebRTC is a real time communication protocol for establishing a direct connection between nodes on a network ("peers"),
 In order to connect these peers it uses a signalling server to exchange details and ICE servers to establish each connection.
@@ -7,13 +6,6 @@ In order to connect these peers it uses a signalling server to exchange details 
 In most cases WebRTC can use a STUN server to retrieve the public IP address and port of each peer to establish a direct connection or connect them directly if they are on the same subnet.
 
 However when it comes to Symetrical NAT it's a different story; In this situation the port for each peer changes on each connection and only accepts an inbound connection from a destination and port of the outbound connection it was created for. This forces WebRTC to use a TURN server inorder to relay the data through a 3rd party to each peer, since they cannot connect to each other directly.
-
-In this specification I propose a new protocol RAWR (Router assisting with relaying), for this protocol there are three guiding principles:
-
-- It should be based on outbound connections
-- It shouldn't require punching holes or insecure protcols (like uPnP)
-- It should be flexible to deploy on legacy routers
-- It should be able to fallback if it can't do a full traversal
 
 # Overview
 

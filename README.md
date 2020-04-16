@@ -1,6 +1,6 @@
 # Project Laya
 
-Project Laya is a concept for a modern peer-to-peer protocol designed to work under all network
+Project Laya is a concept for a modern peer-to-peer protocol for designed to work under all network
 conditions including traversing symetrical NATs and other unique conditions not currently handled
 by STUN or TURN.
 
@@ -14,4 +14,10 @@ For this protocol we have the following five principles:
 
 ## Introduction
 
-TBC
+When people think of how computers communicate with eachother via the internet they will often
+give an analogy of computers being like telephones and IP Addresses are the phone numbers.
+
+However the reality is much more complicated as we will explain how the internet currently works
+and how current peer-to-peer tecnologies create a connection between two computers.
+
+### Basic

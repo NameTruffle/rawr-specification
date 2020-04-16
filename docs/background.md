@@ -1,4 +1,4 @@
-## Introduction
+# Background
 
 When people think of how computers communicate with eachother via the internet they will often
 give an analogy of computers being like telephones and IP Addresses are the phone numbers.
